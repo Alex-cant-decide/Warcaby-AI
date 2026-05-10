@@ -4,6 +4,7 @@ Projekt przedstawia uproszczoną wersję gry w warcaby z przeciwnikiem sterowany
 Sztuczna inteligencja wykorzystuje algorytm Minimax wraz z optymalizacją Alpha-Beta Pruning do podejmowania decyzji podczas gry.
 
 ## Funkcje
+
 - gra gracz vs AI,
 - implementacja algorytmu Minimax,
 - Alpha-Beta Pruning dla szybszego przeszukiwania,
@@ -11,6 +12,7 @@ Sztuczna inteligencja wykorzystuje algorytm Minimax wraz z optymalizacją Alpha-
 - uproszczone zasady warcabów.
 
 ## Technologie
+
 - Python
 - Pygame
 - Minimax

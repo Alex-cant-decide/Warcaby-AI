@@ -1,6 +1,7 @@
-import pygame
-import math
 import copy
+import math
+
+import pygame
 
 pygame.init()
 
@@ -299,38 +300,37 @@ def minimax(board, depth, alpha, beta, maximizing):
 
         return max_eval
 
-    else:
 
-        min_eval = math.inf
+    min_eval = math.inf
 
-        for move in get_all_moves(board, HUMAN):
+    for move in get_all_moves(board, HUMAN):
 
-            new_board = copy.deepcopy(board)
+        new_board = copy.deepcopy(board)
 
-            make_move(
-                new_board,
-                move[0],
-                move[1],
-                move[2],
-                move[3]
-            )
+        make_move(
+            new_board,
+            move[0],
+            move[1],
+            move[2],
+            move[3]
+        )
 
-            evaluation = minimax(
-                new_board,
-                depth - 1,
-                alpha,
-                beta,
-                True
-            )
+        evaluation = minimax(
+            new_board,
+            depth - 1,
+            alpha,
+            beta,
+            True
+        )
 
-            min_eval = min(min_eval, evaluation)
+        min_eval = min(min_eval, evaluation)
 
-            beta = min(beta, evaluation)
+        beta = min(beta, evaluation)
 
-            if beta <= alpha:
-                break
+        if beta <= alpha:
+            break
 
-        return min_eval
+    return min_eval
 
 def ai_move(board):
 
