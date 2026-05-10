@@ -1,21 +1,16 @@
-# Python Template
+# Mini Warcaby AI
 
-[![python](https://img.shields.io/badge/Python-3.14-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
-[![ruff](https://github.com/wnowicki/pytemp/workflows/Ruff/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![pytest](https://github.com/wnowicki/pytemp/workflows/Pytest/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![pylint](https://github.com/wnowicki/pytemp/workflows/Pylint/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![markdown](https://github.com/wnowicki/pytemp/workflows/Markdown%20Lint/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![License: GPLv3](https://img.shields.io/badge/License-MIT-blue.svg)](https://license.md/licenses/mit-license/)
+Projekt przedstawia uproszczoną grę w warcaby z przeciwnikiem AI.
 
-## Test
+## Technologie
+- Python
+- Pygame
+- Minimax
+- Alpha-Beta Pruning
 
-```shell
-uv run pytest
-```
+## Uruchomienie
 
-## Security
+pip install -r requirements.txt
 
-If you discover any security-related issues, please email [email](mailto:email) instead of using the issue tracker.
-
----
-Copyright (c) [year] [fullname]
+uv sync
+uv run python src/main.py
