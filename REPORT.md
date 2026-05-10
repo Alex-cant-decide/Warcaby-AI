@@ -23,6 +23,7 @@ Algorytm wybiera ruch o najlepszej ocenie.
 
 Przetestowano działanie AI dla różnych sytuacji na planszy.
 Sprawdzono poprawność:
+
 - ruchów,
 - bicia pionków,
 - wykrywania zwycięstwa,

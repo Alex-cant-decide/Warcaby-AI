@@ -53,4 +53,3 @@ pip install pygame-ce
 ```
 
 Po instalacji ponownie uruchom projekt.
-
