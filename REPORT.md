@@ -29,6 +29,16 @@ Sprawdzono poprawność:
 - wykrywania zwycięstwa,
 - wykrywania remisu.
 
+## Testy
+
+Testy należy odpalać komendą:
+
+```bash
+uv run python -m pytest
+```
+
+Na ekranie wyskoczy gra, ale w terminalu włączą się testy w Pytest.
+
 ## Wyniki
 
 AI poprawnie analizuje ruchy i wybiera najlepsze dostępne decyzje.

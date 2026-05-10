@@ -43,10 +43,41 @@ lub klasycznie:
 ```bash
 python app/main.py
 ```
+## Testy
+
+Projekt używa frameworka **pytest** do uruchamiania testów.
+
+### Uruchomienie testów
+
+
+```bash
+uv run python -m pytest
+```
+
+### Pokrycie kodu (coverage)
+
+```bash
+pytest --cov=. --cov-report=term
+```
+
+---
+
+## Wymagania testów
+
+Do uruchomienia testów potrzebne są:
+
+- pytest
+- pytest-cov (opcjonalnie, do coverage)
+
+Instalacja:
+
+```bash
+pip install pytest pytest-cov
+```
 
 ## Problemy z Pygame
 
-Jeśli standardowy `pygame` nie działa poprawnie na Twoim systemie, zainstaluj wersję community edition:
+Czasami na systemach Windows standardowy `pygame` nie działa poprawnie, jeśli tak się dzieje zainstaluj wersję community edition:
 
 ```bash
 pip install pygame-ce
