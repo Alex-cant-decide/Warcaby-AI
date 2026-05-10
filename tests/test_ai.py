@@ -1,5 +1,6 @@
 from app import main
 
+
 def test_ai_minimax_execution():
 
     if hasattr(main, "minimax"):

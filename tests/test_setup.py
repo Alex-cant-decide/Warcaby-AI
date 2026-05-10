@@ -1,5 +1,6 @@
 from app import main
 
+
 def test_game_setup():
 
     if hasattr(main, "init_game"):

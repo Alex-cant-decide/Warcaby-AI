@@ -1,11 +1,11 @@
+import contextlib
+
 from app import main
 
-def test_player_move_logic():
 
+def test_player_move():
     if hasattr(main, "move"):
-        try:
+        with contextlib.suppress(Exception):
             main.move(0, 0, 1, 1)
-        except Exception:
-            pass
 
     assert True

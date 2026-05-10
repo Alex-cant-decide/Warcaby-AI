@@ -43,12 +43,12 @@ lub klasycznie:
 ```bash
 python app/main.py
 ```
+
 ## Testy
 
 Projekt używa frameworka **pytest** do uruchamiania testów.
 
 ### Uruchomienie testów
-
 
 ```bash
 uv run python -m pytest
