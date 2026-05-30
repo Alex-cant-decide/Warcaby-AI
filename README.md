@@ -1,21 +1,86 @@
-# Python Template
+# Mini Warcaby AI
 
-[![python](https://img.shields.io/badge/Python-3.14-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
-[![ruff](https://github.com/wnowicki/pytemp/workflows/Ruff/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![pytest](https://github.com/wnowicki/pytemp/workflows/Pytest/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![pylint](https://github.com/wnowicki/pytemp/workflows/Pylint/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![markdown](https://github.com/wnowicki/pytemp/workflows/Markdown%20Lint/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![License: GPLv3](https://img.shields.io/badge/License-MIT-blue.svg)](https://license.md/licenses/mit-license/)
+Projekt przedstawia uproszczoną wersję gry w warcaby z przeciwnikiem sterowanym przez AI.  
+Sztuczna inteligencja wykorzystuje algorytm Minimax wraz z optymalizacją Alpha-Beta Pruning do podejmowania decyzji podczas gry.
 
-## Test
+## Funkcje
 
-```shell
-uv run pytest
+- gra gracz vs AI,
+- implementacja algorytmu Minimax,
+- Alpha-Beta Pruning dla szybszego przeszukiwania,
+- interfejs graficzny oparty o Pygame,
+- uproszczone zasady warcabów.
+
+## Technologie
+
+- Python
+- Pygame
+- Minimax
+- Alpha-Beta Pruning
+
+## Instalacja
+
+Najpierw zainstaluj zależności projektu:
+
+```bash
+pip install -r requirements.txt
 ```
 
-## Security
+lub przy użyciu `uv`:
 
-If you discover any security-related issues, please email [email](mailto:email) instead of using the issue tracker.
+```bash
+uv sync
+```
+
+## Uruchomienie projektu
+
+```bash
+uv run python app/main.py
+```
+
+lub klasycznie:
+
+```bash
+python app/main.py
+```
+
+## Testy
+
+Projekt używa frameworka **pytest** do uruchamiania testów.
+
+### Uruchomienie testów
+
+```bash
+uv run python -m pytest
+```
+
+### Pokrycie kodu (coverage)
+
+```bash
+pytest --cov=. --cov-report=term
+```
 
 ---
-Copyright (c) [year] [fullname]
+
+## Wymagania testów
+
+Do uruchomienia testów potrzebne są:
+
+- pytest
+- pytest-cov (opcjonalnie, do coverage)
+
+Instalacja:
+
+```bash
+pip install pytest pytest-cov
+```
+
+## Problemy z Pygame
+
+Czasami na systemach Windows standardowy `pygame` nie działa poprawnie, jeśli tak się dzieje zainstaluj wersję community edition:
+
+```bash
+pip install pygame-ce
+```
+
+Po instalacji ponownie uruchom projekt.
